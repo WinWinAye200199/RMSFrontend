@@ -1,0 +1,5 @@
+export const LEAVE_STATUS = {
+    PENDING: 'PENDING',
+    APPROVED: 'APPROVED',
+    DENIED: 'DENIED'
+}

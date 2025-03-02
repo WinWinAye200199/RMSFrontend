@@ -66,7 +66,7 @@ export function AssignClockInClockOut({ shift, attandance }: { shift: Shift, att
         setOpenModal(!openModal);
     }
 
-    const isNotSameDay = attandance && !dayjs(attandance.date).isSame(dayjs(shift.date), 'date');
+    const isNotSameDay = !dayjs(shift.date).isSame(dayjs(), 'date');
 
     return (
         <>
